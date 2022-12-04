@@ -1,0 +1,31 @@
+#logoHenry {
+  margin-right: 20px;
+  
+}
+.navbar{
+  background: rgba(0,0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  
+}
+
+a{
+  color: #d4d6d9;
+  
+}
+a:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+.input-search{
+  border-bottom-left-radius: 13px;
+  border-top-left-radius: 13px;
+  border-width: 0px;
+}
+.submit{
+  border-bottom-right-radius: 13px;
+  border-top-right-radius: 13px;
+  border-width: 0px;
+}
+.input-search:focus{
+  outline: none;
+}
