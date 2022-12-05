@@ -2,22 +2,60 @@
     position: absolute;
     top: 20%;
     left: 10%;
-    bottom: 10%;
     right: 10%;
     padding: 15px;
-    background: rgb(0, 104, 125);
-    color: aliceblue;
+    background: rgba(180, 213, 221, 0.8);
+    color: rgb(12, 15, 17);
     text-decoration-color: #dce9f5;
-
-    
+    border-radius: 10px;
+  
 }
+
+
 h1{
- color: rgb(176, 201, 208);   
+    padding-top: 3%;
+ color: rgb(0, 0, 0);   
 }
 
 .temp{
-    display: flex;
+    text-align: center;
 }
 .ubicacion{
     display: flex;
+}
+.contenedor{
+    display: grid;
+   font-weight: bold;
+}
+
+.iconoClima{
+    padding: 0;
+    margin: 0;
+}
+
+.col1{
+    grid-column: 1 / 1;
+     grid-row: 1;
+    
+    
+    }
+    .col2{
+        padding-top:15% ;
+        grid-column: 1 / 1;
+        grid-row: 2;
+        
+        }
+@media (min-width: 500px) {
+    .col1{
+        grid-column: 1 / 2;
+         grid-row: 1;
+        
+        
+        }
+        .col2{
+            padding-top:15% ;
+            grid-column: 2 / 2;
+            grid-row: 1;
+            
+            }
 }

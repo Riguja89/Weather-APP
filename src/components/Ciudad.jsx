@@ -28,48 +28,46 @@ export default function Ciudad({ciudad}) {
 
      <div className='ciudad' >
      <h1> {ciudad.name} </h1>  
-     <div className='temp'>
-        <p>Min</p>
-        <p>{ciudad.min}°c</p>
+      <div className='contenedor'>
+     <div className='col1'>
+         <img className="iconoClima" src={"http://openweathermap.org/img/wn/"+ciudad.img+"@4x.png"} alt="" />
+         <div className='temp'>
+        <p>{ciudad.weather[0].toUpperCase()+ciudad.weather.slice(1,ciudad.weather.length)}</p>
      </div>
-     <div className='temp'>
-     <p>Max</p>
-        <p>{ciudad.max}°c</p>
+         <div className='temp'>
+        <p>Min: {ciudad.min}°c</p>
      </div>
+
      <div className='temp'>
-        <p>Temp </p>
-        <p>{ciudad.temp}°c</p>
+     <p>Max: {ciudad.max}°c</p>
      </div>
+
+      </div>
+       <div className='col2'>
      <div className='temp'>
-        <p>Clima</p>
-        <p>{ciudad.weather}</p>
+        <p>Temperatura actual: {ciudad.temp}°c</p>
      </div>
-     <div>
+    
+     <div className='temp'>
         <p>{ciudad.clouds}% nublado</p>
      </div>
      <div className='temp'>
-        <p>Velocidad de Viento</p>
-        <p>{ciudad.wind} Km/h</p>
+        <p>Velocidad de Viento: {ciudad.wind} Km/h</p>
      </div>
      <div className='temp'>
-        <p>Presion</p>
-        <p>{ciudad.pres} Pa</p>
+        <p>Presion: {ciudad.pres} Pa</p>
      </div>
      <div className='temp'>
-        <p>Humedad Relativa</p>
-        <p>{ciudad.hum}%</p>
+        <p>Humedad Relativa: {ciudad.hum}%</p>
      </div>
-     <div className='ubicacion'>
-        <p>Latitud</p>
-        <p>{ciudad.latitud}</p>
-        <p>Longitud</p>
-        <p>{ciudad.longitud}</p>
+     <div className='temp'>
+      <p>
+      Latitud: {ciudad.latitud}, Longitud: {ciudad.longitud}
+      </p>         
      </div>
-     <div >
-              <img className="iconoClima" src={"http://openweathermap.org/img/wn/"+ciudad.img+"@4x.png"} alt="" />
-            </div>
-        
+     </div> 
         </div>   
+        </div>
         
     </div>
 
